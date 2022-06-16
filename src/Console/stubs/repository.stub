@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Repositories\Eloquent;
+
+use {{ namespacedModel }};
+use tienhm7\Repository\Repository;
+
+class {{ class }} extends Repository
+{
+    /**
+     * Specify Model class name
+     *
+     * @return string
+     */
+    public function model()
+    {
+        return {{ model }}::class;
+    }
+}

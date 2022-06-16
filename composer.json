@@ -1,14 +1,15 @@
 {
     "type": "library",
-    "name": "tienhm7/template-php-lib",
+    "name": "tienhm7/laravel-repository",
     "description": "Template for repository helper, library - Basic, Simple and Lightweight",
     "keywords": [
-        "template",
+        "repository",
+        "laravel",
         "helper",
         "library",
         "php"
     ],
-    "homepage": "https://github.com/tienhm7/template-php-lib",
+    "homepage": "https://github.com/tienhm7/laravel-repository",
     "license": "MIT",
     "minimum-stability": "stable",
     "authors": [
@@ -20,14 +21,21 @@
         }
     ],
     "require": {
-        "php": ">=5.6"
+        "php": ">=7.4"
+    },
+    "conflict": {
+        "laravel/laravel": "<8.0"
     },
     "autoload": {
         "psr-4": {
-            "tienhm7\\Libraries\\TemplateREPLACE\\": "src/"
-        },
-        "files": [
-            "helpers/helpers.php"
-        ]
+            "tienhm7\\Repository\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tienhm7\\Repository\\RepositoryProvider"
+            ]
+        }
     }
 }

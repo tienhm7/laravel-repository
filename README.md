@@ -1,55 +1,27 @@
-# Template start helper, library
+[![Latest Stable Version](https://poser.pugx.org/tienhm7/laravel-repository/v/stable)](https://packagist.org/packages/tienhm7/laravel-repository)
+[![Total Downloads](https://poser.pugx.org/tienhm7/laravel-repository/downloads)](https://packagist.org/packages/tienhm7/laravel-repository)
+[![Latest Unstable Version](https://poser.pugx.org/tienhm7/laravel-repository/v/unstable)](https://packagist.org/packages/tienhm7/laravel-repository)
+[![composer.lock](https://poser.pugx.org/tienhm7/laravel-repository/composerlock)](https://packagist.org/packages/tienhm7/laravel-repository)
+[![License](https://poser.pugx.org/tienhm7/laravel-repository/license)](https://packagist.org/packages/tienhm7/laravel-repository)
 
-Template for repository helper, library - Basic, Simple and Lightweight
+# Laravel Repository
 
-## Use this Template
+Apply repository design pattern for Laravel
 
-First, you can `Use this template` for new project: [Use this template](https://github.com/tienhm7/template-php-lib/generate)
+## Use Laravel Repository
 
-Second, clone your project to your to path in your machine
-
-Finally, your edit file `composer.json` in root folder of project
-
-```json
-{
-    "type": "library",
-    "name": "tienhm7/template-php-lib",
-    "description": "Template for repository helper, library - Basic, Simple and Lightweight",
-    "keywords": [
-        "template",
-        "helper",
-        "library",
-        "php"
-    ],
-    "homepage": "https://github.com/tienhm7/template-php-lib",
-    "license": "MIT",
-    "minimum-stability": "stable",
-    "authors": [
-        {
-            "name": "Hoang Manh Tien",
-            "email": "tiencntt2@gmail.com",
-            "homepage": "https://github.com/tienhm7",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": ">=5.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "tienhm7\\Libraries\\REPLACE_FOR_YOUR\\": "src/"
-        },
-        "files": [
-            "helpers/helpers.php"
-        ]
-    }
-}
-
+Step 1: Require package
+```
+composer require tienhm7/laravel-repository
 ```
 
-Replace name space `REPLACE_FOR_YOUR` to Library space, example: `JSON`. After change namespace, project namespace same `"tienhm7\\Libraries\\JSON\\": "src/"`
+Step 2: Run command
 
-Finished, your can writing new awesome helper and library now time.
+Example: Create UserRepository
+```
+php artisan make:repository UserRepository
+```
+After run above command which auto generate UserRepository in App/Repositories/Eloquent directory
 
 ## Contact & Support
 
